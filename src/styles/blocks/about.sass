@@ -1,0 +1,38 @@
+.about__image
+  width: 200px
+  max-width: 200px
+  max-height: 200px
+  box-shadow: 22px 22px 0 $base-body-color
+  border-radius: 0.50em
+  overflow: hidden
+
+.about__wrapper
+  margin: auto
+  padding: 0 1.2em
+  max-width: 450px
+
+.about__top-title, .about__header
+  margin-top: 1.5em
+  font-size: 2em
+
+.about__top-text, .about__text
+  font-size: 1.3em
+
+.about__top-title, .about__top-text
+  text-align: right
+
+.about__header, .about__text
+  text-align: left
+
+@media screen and (min-width: 900px)
+  .about__image
+    float: left
+  
+  .about__wrapper
+    max-width: 600px
+
+  .about__header
+    margin-top: 2.5em
+
+  .about__top-text, .about__top-title
+    padding-left: 39%
