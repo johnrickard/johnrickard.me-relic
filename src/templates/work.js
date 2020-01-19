@@ -8,10 +8,14 @@ export default ({ data }) => (
     <article className="sheet">
       <div className="sheet__inner">
         <div className="sheet__gallery">
-          <Img fluid={data.datoCmsWork.coverImage.fluid} />
+          {data.datoCmsWork.coverImage ? (
+            <Img fluid={data.datoCmsWork.coverImage.fluid} />
+          ) : null }
         </div>
-        <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
-        <div
+        {data.datoCmsWork.title ? (
+          <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
+        ) : null }
+          <div
           className="sheet__body"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,
