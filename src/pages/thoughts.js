@@ -14,9 +14,9 @@ const Thought = ({ data }) => (
           >
             <figure className="card">
               <figcaption className="card__caption">
-                <h6 className="card__title">{thought.title}</h6>
+                <h6 className="card__title">{thought.cardTitle}</h6>
                 <div className="card__description">
-                  <p>{thought.excerpt}</p>
+                  <p>{thought.cardExcerpt}</p>
                 </div>
                 <div className="card__date">
                   <p>Published: {thought.datePublished}</p>
@@ -38,9 +38,9 @@ export const query = graphql`
       edges {
         node {
           id
-          title
+          cardTitle
           slug
-          excerpt
+          cardExcerpt
           datePublished
         }
       }

@@ -8,19 +8,25 @@ export default ({ data }) => (
     <article className="sheet">
       <div className="sheet__inner">
         {data.datoCmsThought.coverImage ? (
-          <div className="sheet__gallery">
+          <div className="sheet__gallery sheet__gallery_shadow">
             <Img fluid={data.datoCmsThought.coverImage.fluid} />
           </div>
         ) : null}
-        <h1 className="sheet__title">{data.datoCmsThought.title}</h1>
-        <div
-          className="sheet__body"
-          dangerouslySetInnerHTML={{
-            __html:
-              data.datoCmsThought.descriptionNode.childMarkdownRemark.html,
-          }}
-        />
-        <p style={{ float: 'right' }}>{data.datoCmsThought.datePublished}</p>
+        {data.datoCmsThought.title ? (
+          <h1 className="sheet__title">{data.datoCmsThought.title}</h1>
+        ) : null}
+        {data.datoCmsThought.descriptionNode ? (
+          <div
+            className="sheet__body"
+            dangerouslySetInnerHTML={{
+              __html:
+                data.datoCmsThought.descriptionNode.childMarkdownRemark.html,
+            }}
+          />
+        ) : null}
+        {data.datoCmsThought.datePublished ? (
+          <p style={{ float: 'right' }}>{data.datoCmsThought.datePublished}</p>
+        ) : null}
       </div>
     </article>
   </Layout>
