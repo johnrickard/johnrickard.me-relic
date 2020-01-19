@@ -7,8 +7,8 @@
 
 .sheet__title, .sheet__header
   font-size: 30px
+  padding-top: 1em
   margin-bottom: 30px
-  font-weight: bold
   color: $dark-body-color
   line-height: 1
 
@@ -17,7 +17,11 @@
   margin-bottom: 30px
 
 .sheet__gallery
-  margin-bottom: 30px
+  margin: 0 auto 30px
+  max-width: 360px
+
+.sheet__gallery_shadow
+  box-shadow: 7px 7px 12px $base-body-color
 
 .sheet__body
   color: $black-body-color
@@ -74,6 +78,9 @@
 
   .sheet__title
     font-size: 48px
+
+  .sheet__gallery
+    max-width: 360px
 
   .sheet__lead
     font-size: 20px
