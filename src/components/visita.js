@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 
 const Visita = _ => {
