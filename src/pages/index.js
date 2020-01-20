@@ -30,18 +30,18 @@ const IndexPage = ({ data }) => (
             <div key={work.id} className="showcase__item">
               <Link to={`/works/${work.slug}`} className="card__image">
                 <figure className="card">
-                  {work.coverImage ? (
+                  {work.coverImage && (
                     <Img fluid={work.coverImage.fluid} />
-                  ) : null }
+                  )}
                   <figcaption className="card__caption">
-                    {work.title ? (
+                    {work.title && (
                       <h1 className="card__title">{work.title}</h1>
-                    ) : null}
-                    {work.excerpt ? (
+                    )}
+                    {work.excerpt && (
                       <div className="card__description">
                         <p>{work.excerpt}</p>
                       </div>
-                    ) : null }
+                    )}
                   </figcaption>
                 </figure>
               </Link>

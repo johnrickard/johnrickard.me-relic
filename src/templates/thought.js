@@ -7,15 +7,15 @@ export default ({ data }) => (
   <Layout>
     <article className="sheet">
       <div className="sheet__inner">
-        {data.datoCmsThought.coverImage ? (
+        {data.datoCmsThought.coverImage && (
           <div className="sheet__gallery sheet__gallery_shadow">
             <Img fluid={data.datoCmsThought.coverImage.fluid} />
           </div>
-        ) : null}
-        {data.datoCmsThought.title ? (
+        )}
+        {data.datoCmsThought.title && (
           <h1 className="sheet__title">{data.datoCmsThought.title}</h1>
-        ) : null}
-        {data.datoCmsThought.descriptionNode ? (
+        )}
+        {data.datoCmsThought.descriptionNode && (
           <div
             className="sheet__body"
             dangerouslySetInnerHTML={{
@@ -23,10 +23,10 @@ export default ({ data }) => (
                 data.datoCmsThought.descriptionNode.childMarkdownRemark.html,
             }}
           />
-        ) : null}
-        {data.datoCmsThought.datePublished ? (
+        )}
+        {data.datoCmsThought.datePublished && (
           <p style={{ float: 'right' }}>{data.datoCmsThought.datePublished}</p>
-        ) : null}
+        )}
       </div>
     </article>
   </Layout>

@@ -8,13 +8,13 @@ export default ({ data }) => (
     <article className="sheet">
       <div className="sheet__inner">
         <div className="sheet__gallery">
-          {data.datoCmsWork.coverImage ? (
+          {data.datoCmsWork.coverImage && (
             <Img fluid={data.datoCmsWork.coverImage.fluid} />
-          ) : null }
+          )}
         </div>
-        {data.datoCmsWork.title ? (
+        {data.datoCmsWork.title && (
           <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
-        ) : null }
+        )}
           <div
           className="sheet__body"
           dangerouslySetInnerHTML={{
