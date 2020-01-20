@@ -15,7 +15,7 @@ export default ({ data }) => (
         {data.datoCmsWork.title && (
           <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
         )}
-          <div
+        <div
           className="sheet__body"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,

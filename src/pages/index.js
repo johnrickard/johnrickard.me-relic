@@ -30,9 +30,7 @@ const IndexPage = ({ data }) => (
             <div key={work.id} className="showcase__item">
               <Link to={`/works/${work.slug}`} className="card__image">
                 <figure className="card">
-                  {work.coverImage && (
-                    <Img fluid={work.coverImage.fluid} />
-                  )}
+                  {work.coverImage && <Img fluid={work.coverImage.fluid} />}
                   <figcaption className="card__caption">
                     {work.title && (
                       <h1 className="card__title">{work.title}</h1>
