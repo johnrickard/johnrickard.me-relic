@@ -52,11 +52,6 @@ const Footer = _ => {
                   <div className="footer__icon_social-github" />
                 </a>
               </li>
-              <li>
-                <Link to={data.datoCmsFooter.urlBottomLink3}>
-                  <div className="footer__icon_social-thoughts" />
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

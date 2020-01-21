@@ -36,11 +36,6 @@ const Visita = _ => {
                 <div className="footer__icon_social-github" />
               </a>
             </li>
-            <li>
-              <a href={data.datoCmsFooter.urlBottomLink3}>
-                <div className="footer__icon_social-thoughts" />
-              </a>
-            </li>
           </ul>
         </div>
       )}
