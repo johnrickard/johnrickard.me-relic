@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Masonry from 'react-masonry-component'
 import Layout from '../components/layout'
 
 const Thought = ({ data }) => (
   <Layout>
-    <Masonry className="showcase">
+    <div className="showcase">
       {data.allDatoCmsThought.edges.map(({ node: thought }) => (
         <div key={thought.id} className="showcase__thought">
           <Link
@@ -26,7 +25,7 @@ const Thought = ({ data }) => (
           </Link>
         </div>
       ))}
-    </Masonry>
+    </div>
   </Layout>
 )
 

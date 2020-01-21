@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Masonry from 'react-masonry-component'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
@@ -25,7 +24,7 @@ const IndexPage = ({ data }) => (
         <div className="showcase__header">
           {data.datoCmsHome.portfolioTitle}
         </div>
-        <Masonry className="showcase">
+        <div className="showcase">
           {data.allDatoCmsWork.edges.map(({ node: work }) => (
             <div key={work.id} className="showcase__item">
               <Link to={`/works/${work.slug}`} className="card__image">
@@ -45,7 +44,7 @@ const IndexPage = ({ data }) => (
               </Link>
             </div>
           ))}
-        </Masonry>
+        </div>
       </div>
     </div>
   </Layout>

@@ -26,12 +26,13 @@
   
 @media screen and (min-width: 900px)
   .showcase
-    left: -2em // to offset 2em padding on showcase__item below
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
 
   .showcase__item
-    float: left
-    width: (100% / 2)
-    padding-left: 2em
+    width: (49%) // leaves 2% to space-between
 
   .showcase__thought
     width: 100%
