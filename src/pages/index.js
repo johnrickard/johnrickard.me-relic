@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
 const IndexPage = ({ data }) => (
   <Layout>
+    <HelmetDatoCms seo={data.datoCmsHome.seoMetaTags} />
     {/* About */}
     <div className="container__about">
       <div className="about__wrapper">
@@ -55,6 +57,9 @@ export default IndexPage
 export const query = graphql`
   query IndexQuery {
     datoCmsHome {
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
       aboutImage {
         fluid(maxWidth: 300, imgixParams: { fm: "jpg", auto: "compress" }) {
           ...GatsbyDatoCmsSizes

@@ -22,11 +22,6 @@ const TemplateWrapper = ({ children }) => {
               ...GatsbyDatoCmsFaviconMetaTags
             }
           }
-          datoCmsHome {
-            seoMetaTags {
-              ...GatsbyDatoCmsSeoMetaTags
-            }
-          }
           datoCmsFooter {
             mobileExtraHeader
             header
@@ -35,10 +30,7 @@ const TemplateWrapper = ({ children }) => {
       `}
       render={data => (
         <div className={`container ${showMenu ? 'is-open' : ''}`}>
-          <HelmetDatoCms
-            favicon={data.datoCmsSite.faviconMetaTags}
-            seo={data.datoCmsHome.seoMetaTags}
-          />
+          <HelmetDatoCms favicon={data.datoCmsSite.faviconMetaTags} />
           {/* Contact mobile view */}
           <div className="container__footer-pop">
             <Visita />
