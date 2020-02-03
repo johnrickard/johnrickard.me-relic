@@ -21,7 +21,6 @@ const Contact = ({ data: { contact } }) => (
           <Form
             name="Messages"
             data-netlify="true"
-            data-netlify-recaptcha="true"
           >
             <input type="hidden" name="form-name" value="Messages" />
             <Form.Group controlId="formName">
@@ -38,8 +37,6 @@ const Contact = ({ data: { contact } }) => (
               <Form.Label>Message</Form.Label>
               <Form.Control as="textarea" rows="3" name="postmessage" />
             </Form.Group>
-
-            <div data-netlify-recaptcha="true"></div>
 
             <Button
               variant="primary"
