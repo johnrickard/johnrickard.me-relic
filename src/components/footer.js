@@ -9,11 +9,8 @@ const Footer = _ => {
         query FooterQuery {
           datoCmsFooter {
             header
-            urlBottomIcon1
             urlBottomLink1
-            urlBottomIcon2
             urlBottomLink2
-            urlBottomIcon3
             urlBottomLink3
           }
         }
@@ -49,6 +46,11 @@ const Footer = _ => {
               </li>
               <li>
                 <a href={data.datoCmsFooter.urlBottomLink2}>
+                  <div className="footer__icon_social-telegram" />
+                </a>
+              </li>
+              <li>
+                <a href={data.datoCmsFooter.urlBottomLink3}>
                   <div className="footer__icon_social-github" />
                 </a>
               </li>
