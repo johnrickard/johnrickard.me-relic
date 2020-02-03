@@ -19,24 +19,24 @@ const Contact = ({ data: { contact } }) => (
         />
         <div className="contact__form">
           <Form
-            name="Contact form"
+            name="Messages"
             data-netlify="true"
             data-netlify-recaptcha="true"
           >
-            <input type="hidden" name="form-name" value="Contact form" />
+            <input type="hidden" name="form-name" value="Messages" />
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" name="name" />
+              <Form.Control type="text" name="postname" />
             </Form.Group>
 
             <Form.Group controlId="formNumber">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="text" name="email" />
+              <Form.Control type="text" name="postemail" />
             </Form.Group>
 
             <Form.Group controlId="formDate">
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows="3" name="message" />
+              <Form.Control as="textarea" rows="3" name="postmessage" />
             </Form.Group>
 
             <div data-netlify-recaptcha="true"></div>
