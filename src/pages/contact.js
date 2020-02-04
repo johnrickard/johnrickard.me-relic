@@ -18,10 +18,7 @@ const Contact = ({ data: { contact } }) => (
           }}
         />
         <div className="contact__form">
-          <Form
-            name="Messages"
-            data-netlify="true"
-          >
+          <Form name="Messages" data-netlify="true">
             <input type="hidden" name="form-name" value="Messages" />
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
