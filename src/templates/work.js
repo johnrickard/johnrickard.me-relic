@@ -21,6 +21,9 @@ export default ({ data }) => (
             __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,
           }}
         />
+        <div style={{ textTransform: 'lowercase' }}>
+          {data.datoCmsWork.tags}
+        </div>
       </div>
     </article>
   </Layout>
@@ -36,6 +39,7 @@ export const query = graphql`
           html
         }
       }
+      tags
       coverImage {
         url
         fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
