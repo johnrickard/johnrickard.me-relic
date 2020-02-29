@@ -7,6 +7,7 @@ import Footer from './footer'
 import Visita from './visita'
 
 import '../styles/index.sass'
+import '../fonts/fontawesome/css/all.min.css'
 
 const TemplateWrapper = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false)
