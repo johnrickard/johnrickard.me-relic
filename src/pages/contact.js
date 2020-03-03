@@ -10,7 +10,7 @@ const Contact = ({ data: { contact } }) => (
     <article className="sheet">
       <HelmetDatoCms seo={contact.seoMetaTags} />
       <div className="sheet__inner">
-        <h1 className="sheet__title">{contact.pageTitle}</h1>
+        <h1 className="contact__title">{contact.pageTitle}</h1>
         <div
           className="sheet__body"
           dangerouslySetInnerHTML={{

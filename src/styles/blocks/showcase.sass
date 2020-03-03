@@ -6,8 +6,8 @@
 
 .showcase__wrapper
   margin: auto
-  width: 600px
   padding: 0 1.2em
+  max-width: 450px
 
 .showcase__header
   margin-top: 1.5em
@@ -30,6 +30,10 @@
     flex-direction: row
     justify-content: space-between
     flex-wrap: wrap
+
+  .showcase__wrapper
+    margin: 0
+    max-width: 600px
 
   .showcase__item
     width: (49%) // leaves 2% to space-between
