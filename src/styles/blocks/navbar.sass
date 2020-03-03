@@ -23,8 +23,8 @@
     margin-left: 70px
 
   .navbar__button_holder
-    position: fixed
-    bottom: 10px
+    position: sticky
+    top: 50vh
 
   .navbar__button
     display: flex 
@@ -41,3 +41,13 @@
       -webkit-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.40)
       -moz-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.40)
       box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.40)
+
+@media screen and (min-width: 1700px)
+  .navbar__button_holder
+    position: sticky
+    top: 40vh
+
+@media screen and (min-width: 2200px)
+  .navbar__button_holder
+    position: sticky
+    top: 30vh
