@@ -89,16 +89,6 @@ export default () => {
                 ))}
               </ul>
             </div>
-            <div className="experience__subheader" style={{ marginTop: '1em' }}>
-              <a
-                href={data.datoCmsHome.expResumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-external-link-alt" />{' '}
-                {data.datoCmsHome.expSubheader3}
-              </a>
-            </div>
           </div>
         </div>
       )}
