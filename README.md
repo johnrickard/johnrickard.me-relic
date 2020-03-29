@@ -1,1 +1,1 @@
-# Gatsby DatoCMS Netlify Portfolio & Blog
+# Gatsby.js DatoCMS Netlify Personal Website
