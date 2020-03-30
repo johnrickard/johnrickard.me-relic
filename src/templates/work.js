@@ -12,9 +12,16 @@ export default ({ data }) => (
             <Img fluid={data.datoCmsWork.coverImage.fluid} />
           )}
         </div>
-        {data.datoCmsWork.title && (
-          <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
-        )}
+        <div style={{ marginBottom: '30px' }}>
+          {data.datoCmsWork.title && (
+            <h1 className="sheet__title" style={{ marginBottom: '10px' }}>
+              {data.datoCmsWork.title}
+            </h1>
+          )}
+          <div style={{ color: 'black' }}>
+            {data.datoCmsWork.techHeader} {data.datoCmsWork.technologies}
+          </div>
+        </div>
         <div
           className="sheet__body"
           dangerouslySetInnerHTML={{
@@ -33,6 +40,8 @@ export const query = graphql`
   query WorkQuery($slug: String!) {
     datoCmsWork(slug: { eq: $slug }) {
       title
+      techHeader
+      technologies
       excerpt
       descriptionNode {
         childMarkdownRemark {
