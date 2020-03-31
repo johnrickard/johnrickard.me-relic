@@ -24,7 +24,7 @@ export default () => {
               }
             }
           }
-          allDatoCmsTechskill {
+          allDatoCmsTechskill(sort: { fields: [id], order: ASC })  {
             edges {
               node {
                 id
