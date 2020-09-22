@@ -25,11 +25,11 @@ export default () => (
               <i class="fas fa-briefcase"></i>
             </div>
           </Link>
-          <Link to={data.datoCmsNavbar.urlContactButton}>
+          <a href={data.datoCmsNavbar.urlContactButton}>
             <div className="navbar__button">
               <i class="fas fa-envelope"></i>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     )}
