@@ -12,8 +12,6 @@ export default () => {
             expHeader
             expSubheader1
             expSubheader2
-            expSubheader3
-            expResumeUrl
           }
           allDatoCmsKeyskill {
             edges {

@@ -9,7 +9,6 @@ export default () => (
         datoCmsHome {
           aboutTopTitle
           aboutTopText
-          aboutHeader
           aboutText
           aboutImage {
             fluid(maxWidth: 300, imgixParams: { fm: "jpg", auto: "compress" }) {
