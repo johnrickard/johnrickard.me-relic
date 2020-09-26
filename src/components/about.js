@@ -29,7 +29,6 @@ export default () => (
             {data.datoCmsHome.aboutTopTitle}
           </div>
           <div className="about__top-text">{data.datoCmsHome.aboutTopText}</div>
-          <div className="about__header">{data.datoCmsHome.aboutHeader}</div>
           <div className="about__text">{data.datoCmsHome.aboutText}</div>
         </div>
       </div>
