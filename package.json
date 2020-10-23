@@ -1,6 +1,6 @@
 {
-  "name": "www-johnrickard-me",
-  "description": "Gatsby DatoCMS Netlify Portfolio & Blog",
+  "name": "johnrickard.me-relic",
+  "description": "Gatsby.js DatoCMS Netlify Personal Website",
   "version": "1.0.0",
   "author": "John Rickard <hello@johnrickard.me>",
   "dependencies": {
